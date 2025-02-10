@@ -1,4 +1,4 @@
-# Drill-hole Assistant
+# Astro Science Template
 
 ## Based on [Tapyr Template](https://github.com/Appsilon/tapyr-template) (Appsilon) [MIT License]
 
@@ -29,11 +29,11 @@
 
 1. **Clone repository**
 ```sh
-git clone https://github.com/Astrotope/drillhole-assistant.git
+git clone https://<PAT>github.com/DeepSkyWonder/astro_template.git
 ```
 2. **Change to folder**
 ```sh
-cd ./drillhole-assistant
+cd ./astro_template
 ```
 3. **Build image**
 ```sh
