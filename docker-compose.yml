@@ -1,0 +1,25 @@
+services:
+  astro-science:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: astro-science:latest
+    container_name: astro-science
+    ports:
+      - "8095:8080"
+    volumes:
+      - ./app.py:/home/app/app.py
+      - ./astro_template:/home/app/astro_template/
+      - ./www:/home/app/www/
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - VIRTUAL_ENV=/home/app/.venv
+      - PATH=/home/app/.venv/bin:$PATH
+    restart: unless-stopped
+    networks:
+      - astro-science-network
+
+networks:
+  astro-science-network:
+    driver: bridge
