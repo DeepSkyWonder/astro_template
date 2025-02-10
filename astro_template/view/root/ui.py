@@ -9,9 +9,9 @@ def get_dashboard_ui() -> ui.Tag:
                 ui.column(
                     7,
                     ui.h1(
-                        ui.span("Tapyr", style="color: #486590; font-size: 3rem;"),
+                        ui.span("Astro Science", style="color: #486590; font-size: 3rem;"),
                         " | Shiny for Python Template by ",
-                        ui.span("Appsilon", style="color: #007bff; font-size: 3rem;"),
+                        ui.span("Deep Sky Wonder", style="color: #007bff; font-size: 3rem;"),
                     ),
                     ui.output_ui("link_button"),
                     style="padding: 2rem;",
